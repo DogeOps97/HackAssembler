@@ -625,21 +625,6 @@ std::vector<std::string> AssembleInstruction(const std::vector<std::string>& ins
  return binaryInstructionList;
 }
  
-void readFromFile(std::vector<std::string> instructionList, std::string fileLoc)
-{
- std::ifstream inFile;
- inFile.open(fileLoc);
- 
- std::string currentLine;
- if (inFile.is_open())
- {
-  while (std::getline(inFile, currentLine))
-  {
-   
-  }
- }
-}
- 
 void saveToFile(std::string fileLoc, std::vector<std::string> binaryInstructionList)
 {
  std::ofstream outFile;
